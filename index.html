@@ -3,18 +3,65 @@
 <head>
   <title>WEB1 - html</title>
   <meta charset="utf-8">
+  <style>
+    #active {
+      color: red;
+    }
+    .saw {
+      color:gray;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+      font-size: 45px;
+      text-align: center;
+      font-family: serif;
+      border-bottom: 1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    #grid ol {
+      border-right: 1px solid gray;
+      width:125px;
+      margin:0;
+      padding-left: 33px;
+    }
+    #grid {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    #article {
+      padding-left: 0px
+    }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">이 주의 계획표</a></h1>
+  <h1><a href="index.html">SCHEDULE</a></h1>
   <ul>
     <li><a href="1.html">메모장</a></li>
   </ul>
+  <div id="grid">
   <ol>
     <li><a href="2.html">2021 2월 4주</a></li>
     <li><a href="3.html">2021 3월 1주</a></li>
   </ol>
-  <h2>이 주의 계획표</h2>
-  <p><strong>매 주마다 <u>계획</u>을 세우고 싶다.</strong> 그렇지만 예전처럼 파워포인트에서 작업을 하고 저장해서 바탕화면을 바꾸는 것은 귀찮다.</p>
-  <img src="bear.jpeg" width="80%">
+<!--
+  <h1><a href="index.html"><font color="black">이 주의 계획표</font></a></h1>
+  <ul>
+    <li><a href="1.html"><font color="black">메모장</font></a></li>
+  </ul>
+  <ol>
+    <li><a href="2.html"><font color="black">2021 2월 4주</font></a></li>
+    <li><a href="3.html"><font color="black">2021 3월 1주</font></a></li>
+  </ol>
+-->
+  <div id="article">
+    <h2>이 주의 계획표</h2>
+    <p><strong>매 주마다 <u>계획</u>을 세우고 싶다.</strong> 그렇지만 예전처럼 파워포인트에서 작업을 하고 저장해서 바탕화면을 바꾸는 것은 귀찮다.</p>
+    <img src="bear.jpeg" width="80%">
+  </div>
+</div>
 </body>
 </html>
